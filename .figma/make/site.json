@@ -1,0 +1,10 @@
+{
+  "description": "A responsive portfolio site for designers to showcase selected projects, share their background and skills, and connect with potential clients.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
