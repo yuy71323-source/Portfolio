@@ -1,0 +1,17 @@
+.coursework-carousel { position: relative; display: flex; align-items: center; justify-content: center; gap: 3%; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #08080b; touch-action: pan-y; }
+.coursework-stage { position: relative; width: 62%; aspect-ratio: 483 / 305; flex: none; }
+.coursework-stage img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; box-shadow: 0 8px 28px #0009; }
+.coursework-layer-back { transform: translate(5%, -7%) rotate(4deg) scale(.95); opacity: .35; }
+.coursework-layer-mid { transform: translate(2.5%, -3.5%) rotate(2deg) scale(.975); opacity: .65; }
+.coursework-main { opacity: 0; transform: translateX(-7%) scale(.95); transition: opacity .6s ease, transform .7s cubic-bezier(.22,.7,.22,1); }
+.coursework-main.is-active { opacity: 1; transform: translateX(0) scale(1); }
+.coursework-thumbs { display: flex; flex-direction: column; gap: clamp(6px, 1vw, 14px); width: 10%; z-index: 2; }
+.coursework-thumbs button { padding: 0; border: 1px solid #ffffff35; background: #12121a; opacity: .55; cursor: pointer; transition: opacity .25s, transform .25s; }
+.coursework-thumbs button:hover, .coursework-thumbs button:focus-visible { opacity: 1; transform: scale(1.08); }
+.coursework-thumbs img { display: block; width: 100%; height: auto; }
+.coursework-controls { position: absolute; bottom: 3%; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 18px; color: #eeeaff; font: 12px monospace; letter-spacing: .08em; z-index: 3; }
+.coursework-controls button { width: 32px; height: 32px; border: 1px solid #ffffff80; border-radius: 50%; background: #15121dcc; color: white; cursor: pointer; font-size: 17px; }
+.coursework-controls button:hover { background: #6c54bb; }
+.coursework-carousel button:focus-visible { outline: 2px solid #c8baff; outline-offset: 3px; }
+@media (max-width: 600px) { .coursework-carousel { aspect-ratio: 4 / 3; gap: 2%; } .coursework-stage { width: 75%; } .coursework-thumbs { width: 8%; } .coursework-thumbs button:first-child, .coursework-thumbs button:last-child { display: none; } .coursework-controls { bottom: 2%; gap: 12px; } }
+@media (prefers-reduced-motion: reduce) { .coursework-main, .coursework-thumbs button { transition: none; } }
