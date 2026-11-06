@@ -7,7 +7,7 @@ import { CourseworkCarousel } from './CourseworkCarousel'
 import packagingVideo from '@/assets/works/packaging-motion/packaging.mp4'
 import packagingPoster from '@/assets/works/packaging-motion/frame1.png'
 import uiShowcaseVideo from '@/assets/works/ui-showcase-web.mp4'
-import uiCaseStudy from '@/assets/works/ui-case-study.png'
+import uiCaseStudy from '@/assets/works/ui-case-study.jpg'
 import aigcSceneVideo from '@/assets/works/aigc-scene.mp4'
 import { Viewer, type ViewerItem } from './Viewer'
 
